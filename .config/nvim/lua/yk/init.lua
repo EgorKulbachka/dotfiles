@@ -1,5 +1,5 @@
-require("yk.packer")
-require("yk.coq")
 require("yk.set")
+require("yk.lazy")
+require("yk.coq")
 require("yk.lsp")
 require("yk.last")

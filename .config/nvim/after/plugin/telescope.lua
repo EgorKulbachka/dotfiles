@@ -1,10 +1,10 @@
-local ok, telescope = pcall(require, "telescope")
+local ok, builtin = pcall(require, "telescope.builtin")
 
 if not ok then
     return
 end
 
-local builtin = require("telescope.builtin")
+local telescope = require('telescope')
 
 vim.keymap.set("n", "<leader>ff", function() builtin.find_files{path_display = { "truncate" }} end, {})
 vim.keymap.set("n", "<leader>fr", builtin.resume, {})
