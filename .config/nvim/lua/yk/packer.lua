@@ -37,11 +37,12 @@ return require("packer").startup(function(use)
 
         -- Misc
         use { "tpope/vim-fugitive" }
-        use { "lewis6991/gitsigns.nvim", tag = "release" }
+        use { "lewis6991/gitsigns.nvim" }
         -- use { "elihunter173/dirbuf.nvim" }
         use { "stevearc/oil.nvim" }
         use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }
         use { "folke/which-key.nvim" }
+        use { "cwebster2/github-coauthors.nvim" }
         
         use { "machakann/vim-sandwich" }
         use { "numToStr/Comment.nvim" }
@@ -50,6 +51,9 @@ return require("packer").startup(function(use)
         use { "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } }
         use { "RRethy/vim-illuminate" }
         use { "kyazdani42/nvim-web-devicons" }
+
+        -- org mode
+        -- use { "nvim-orgmode/orgmode" }
 
         -- requires manual setup
         use { "iamcco/markdown-preview.nvim" }

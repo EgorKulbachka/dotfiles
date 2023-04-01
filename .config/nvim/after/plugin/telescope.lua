@@ -13,6 +13,7 @@ vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fd", builtin.diagnostics, {})
 vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>")
+vim.keymap.set("n", "<leader>ia", function() telescope.extensions.githubcoauthors.coauthors() end, {})
 
 telescope.load_extension("fzf")
 telescope.load_extension("undo")
