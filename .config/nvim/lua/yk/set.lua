@@ -22,5 +22,6 @@ vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir"
 vim.opt.undofile = true
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 vim.g.netrw_altfile = 1
 vim.g.netrw_fastbrowse = 0

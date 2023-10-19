@@ -33,10 +33,11 @@ require("lazy").setup({
         -- Misc
         { "tpope/vim-fugitive" },
         { "lewis6991/gitsigns.nvim" },
-        { "stevearc/oil.nvim" },
+        -- { "stevearc/oil.nvim" },
         { "folke/trouble.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },
         { "folke/which-key.nvim" },
-        { "cwebster2/github-coauthors.nvim" },
+        { 'echasnovski/mini.files', version = false },
+        -- { "cwebster2/github-coauthors.nvim" },
         
         { "machakann/vim-sandwich" },
         { "numToStr/Comment.nvim" },
@@ -48,6 +49,7 @@ require("lazy").setup({
 
         -- org mode
         -- use { "nvim-orgmode/orgmode" }
+        -- { "nvim-neorg/neorg", build = ":Neorg sync-parsers", dependencies = { "nvim-lua/plenary.nvim" }, run = ":Neorg sync-parsers" },
 
         -- requires manual setup
         { "iamcco/markdown-preview.nvim" },
