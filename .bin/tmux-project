@@ -1,0 +1,19 @@
+#!/bin/sh
+
+PROJECT_TO_OPEN=$(find ~/Projects/* -maxdepth 0 -type d | fzf)
+
+SESSION_NAME=$(echo $PROJECT_TO_OPEN | sed 's/.*\///g')
+
+if [ -z "$PROJECT_TO_OPEN" ]
+then
+    echo 'No project available'
+    exit 1
+fi
+
+if [ -z "$TMUX" ]
+then
+    tmux new-session -A -s $SESSION_NAME -c $PROJECT_TO_OPEN
+else
+    tmux new-session -d -s $SESSION_NAME -c $PROJECT_TO_OPEN
+    tmux switch-client -t $SESSION_NAME
+fi
