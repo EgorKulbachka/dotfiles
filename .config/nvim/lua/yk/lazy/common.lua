@@ -8,8 +8,6 @@ return {
         end
     },
 
-    { "julienvincent/nvim-paredit" },
-
     { 
         "stevearc/oil.nvim",
         config = function()

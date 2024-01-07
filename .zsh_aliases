@@ -1,0 +1,12 @@
+alias docker-all-stop="docker ps --filter status=running -q | xargs docker stop"
+alias docker-all-rm="docker ps --filter status=exited -q | xargs docker rm"
+alias docker-all-purge="docker-all-stop && docker-all-rm && docker network prune"
+
+alias t="tmux new-session -A -s main -c '~'"
+
+export EDITOR=nvim
+alias vi=nvim
+alias vim=nvim
+alias vig="nvim +Git +only"
+alias viconf="vi ~/.config/nvim/init.lua -c 'cd ~/.config/nvim'"
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"

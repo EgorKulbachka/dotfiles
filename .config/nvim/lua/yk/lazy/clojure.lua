@@ -1,5 +1,6 @@
 return {
     -- { "Olical/conjure" },
+    { "julienvincent/nvim-paredit" },
     { 
         dir = "~/Projects/conjure",
         init = function() 
@@ -15,6 +16,12 @@ return {
                 callback = function() vim.diagnostic.disable(0) end,
                 desc = "Conjure Log disable LSP diagnostics",
             })
+
+            vim.keymap.set(
+                "n",
+                "<localleader>eR",
+                "<cmd>ConjureEvalRootForm<cr><cmd>ConjureEval (dev/refresh)<cr>"
+            )
         end,
     },
 }
