@@ -1,5 +1,2 @@
 require("yk.set")
-require("yk.lazy")
-require("yk.coq")
-require("yk.lsp")
-require("yk.last")
+require("yk.lazy_init")
