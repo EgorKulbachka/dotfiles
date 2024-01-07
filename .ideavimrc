@@ -1,0 +1,62 @@
+" set tai " enables tracking of idea actions
+let mapleader=" "
+
+set visualbell
+set noerrorbells
+set scrolloff=8
+
+set relativenumber
+set number
+set showmode
+set showcmd
+set incsearch
+set hlsearch
+set idearefactormode=keep
+
+set NERDTree
+set commentary
+set surround
+set ideajoin
+
+map <leader>] <Action>(GotoNextError)
+map <leader>[ <Action>(GotoPreviousError)
+map <leader>ec <Action>(IntroduceConstant)
+map <leader>r <Action>(RenameElement)
+map <leader>ev <Action>(IntroduceVariable)
+map <leader>ef <Action>(ExtractFunction)
+map <leader>a <Action>(ShowIntentionActions)
+map <leader>d <Action>(ShowErrorDescription)
+map <C-j> <Action>(MoveLineDown)
+map <C-k> <Action>(MoveLineUp)
+map <leader>ff <Action>(GotoFile)
+map <leader>fc <Action>(GotoClass)
+map <leader>fg <Action>(FindInPath)
+map <leader>fe <Action>(SearchEverywhere)
+
+map <leader>hp <Action>(VcsShowCurrentChangeMarker)
+map <leader>hr <Action>(Vcs.RollbackChangedLines)
+map <leader>hb <Action>(Annotate)
+
+map L <Action>(NextTab)
+map H <Action>(PreviousTab)
+map gu <Action>(FindUsages)
+map gd <Action>(GotoDeclaration)
+map gi <Action>(GotoImplementation)
+map gs <Action>(GotoSuperMethod)
+map go <Action>(FileStructurePopup)
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+map <C-z> <Action>(ToggleDistractionFreeMode)
+map <C-n> <Action>(FindWordAtCaret)
+map <C-p> <Action>(FindPrevWordAtCaret)
+map <C-w>n <Action>(MoveEditorToOppositeTabGroup)
+
+map <A-f> <Action>(Find)
+map <A-r> <Action>(Replace)
+map <C-b> <Nop>
+
+nnoremap <leader>q :bd<CR>
+nnoremap x "_x
+nnoremap <leader>y "*y
+vnoremap <leader>y "*y
+vnoremap <leader>p "_dP
