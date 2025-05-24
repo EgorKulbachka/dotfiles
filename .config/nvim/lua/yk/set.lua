@@ -27,7 +27,7 @@ vim.g.maplocalleader = "\\"
 vim.g.netrw_altfile = 1
 vim.g.netrw_fastbrowse = 0
 
-vim.keymap.set("n", "<leader>q", "<cmd>bd<CR>", {})
+vim.keymap.set("n", "<leader>q", "<cmd>bp<bar>sp<bar>bn<bar>bd<CR>", {})
 vim.keymap.set("n", "L", "<cmd>bn<CR>", {})
 vim.keymap.set("n", "H", "<cmd>bp<CR>", {})
 
@@ -39,6 +39,9 @@ vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv", {})
 
 vim.keymap.set("v", "<leader>p", "\"_dP", {})
 vim.keymap.set({ "n", "v" }, "<leader>y", "\"*y", {})
+
+vim.keymap.set("n", "<C-w>>", "<C-w>10>", {})
+vim.keymap.set("n", "<C-w><", "<C-w>10<", {})
 
 -- Terminal bindings
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {})

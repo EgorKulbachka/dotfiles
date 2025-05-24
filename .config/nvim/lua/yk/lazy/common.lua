@@ -1,14 +1,14 @@
 return {
     { "kyazdani42/nvim-web-devicons" },
-    { 
-        "catppuccin/nvim", 
+    {
+        "catppuccin/nvim",
         name = "catppuccin",
-        config = function() 
+        config = function()
             vim.cmd.colorscheme("catppuccin")
         end
     },
 
-    { 
+    {
         "stevearc/oil.nvim",
         config = function()
             local oil = require("oil")
@@ -18,15 +18,21 @@ return {
         end
     },
     { "folke/which-key.nvim" },
-    { 
+    {
         "machakann/vim-sandwich",
         config = function()
             vim.cmd("runtime macros/sandwich/keymap/surround.vim")
         end
     },
-    { "numToStr/Comment.nvim" },
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            local comment = require("Comment")
+            comment.setup({})
+        end
+    },
     { "gpanders/editorconfig.nvim" },
-    { 
+    {
         "RRethy/vim-illuminate",
         config = function()
             vim.api.nvim_set_hl(0, "IlluminatedWordText", { link = "Visual" })

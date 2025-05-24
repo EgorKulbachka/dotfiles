@@ -33,6 +33,8 @@ map <leader>fc <Action>(GotoClass)
 map <leader>fg <Action>(FindInPath)
 map <leader>fe <Action>(SearchEverywhere)
 
+map <leader>cf <Action>(CopyPathFromRepositoryRootProvider)
+
 map <leader>hp <Action>(VcsShowCurrentChangeMarker)
 map <leader>hr <Action>(Vcs.RollbackChangedLines)
 map <leader>hb <Action>(Annotate)

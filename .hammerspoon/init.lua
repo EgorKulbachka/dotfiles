@@ -29,11 +29,11 @@ end
 hs.hotkey.bind({"control", "option", "shift"}, ";", openProject)
 hs.hotkey.bind({"control", "option", "shift"}, "c", launch("Google Chrome"))
 hs.hotkey.bind({"control", "option", "shift"}, "s", launch("Slack"))
-hs.hotkey.bind({"control", "option", "shift"}, "d", launch("Threads"))
+hs.hotkey.bind({"control", "option", "shift"}, "d", launch("Twist"))
 hs.hotkey.bind({"control", "option", "shift"}, "l", launch("Linear"))
 hs.hotkey.bind({"control", "option", "shift"}, "n", launch("Notion"))
 hs.hotkey.bind({"control", "option", "shift"}, "b", launch("Firefox"))
-hs.hotkey.bind({"control", "option", "shift"}, "t", launch("iTerm"))
+hs.hotkey.bind({"control", "option", "shift"}, "t", launch("Alacritty"))
 hs.hotkey.bind({"control", "option", "shift"}, "f", launch("Finder"))
 hs.hotkey.bind({"control", "option", "shift"}, "a", launch("Launchpad"))
 
@@ -52,3 +52,10 @@ hs.hotkey.bind({"control", "option", "shift"}, "u", function()
     hs.eventtap.keyStrokes(newUuid:lower())
 end)
 
+-- hs.grid.setGrid({w=4, h=4})
+-- hs.grid.setMargins({w=0, h=0})
+--
+-- hs.hotkey.bind({"control", "option", "shift"}, "v", function()
+--     hs.grid.toggleShow()
+-- end)
+--

@@ -2,13 +2,13 @@ return {
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     { "debugloop/telescope-undo.nvim" },
     {
-        "nvim-telescope/telescope.nvim", version = "0.1.1",
-        dependencies = { 
+        "nvim-telescope/telescope.nvim", version = "0.1.8",
+        dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-telescope/telescope-fzf-native.nvim",
             "debugloop/telescope-undo.nvim",
         },
-        config = function() 
+        config = function()
             local builtin = require('telescope.builtin')
             local telescope = require('telescope')
 

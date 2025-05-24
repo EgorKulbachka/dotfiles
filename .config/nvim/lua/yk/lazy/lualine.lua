@@ -1,5 +1,5 @@
 return {
-    "nvim-lualine/lualine.nvim", 
+    "nvim-lualine/lualine.nvim",
     dependencies = { "kyazdani42/nvim-web-devicons", lazy = true },
     config = function()
         local lualine = require("lualine")

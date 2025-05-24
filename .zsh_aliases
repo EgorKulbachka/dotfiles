@@ -7,6 +7,14 @@ alias t="tmux new-session -A -s main -c '~'"
 export EDITOR=nvim
 alias vi=nvim
 alias vim=nvim
-alias vig="nvim +Git +only"
+alias vig="nvim +Neogit +only"
 alias viconf="vi ~/.config/nvim/init.lua -c 'cd ~/.config/nvim'"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+alias gcb="git checkout -b"
+alias gcm="git checkout master"
+alias gc="git commit"
+alias ga="git add ."
+alias gp="git push"
+alias gu="git pull"
+alias gac="git add . && git commit"

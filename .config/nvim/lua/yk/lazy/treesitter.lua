@@ -14,6 +14,11 @@ return {
 
             config.setup {
                 ensure_installed = {
+                    "vimdoc",
+                    "luadoc",
+                    "vim",
+                    "lua",
+                    "markdown",
                     "typescript",
                     "javascript",
                     "yaml",
@@ -33,6 +38,7 @@ return {
                     "clojure",
                     "fennel",
                     "python",
+                    "zig",
                 },
                 sync_install = true,
                 auto_install = false,
@@ -52,7 +58,7 @@ return {
                             ["ab"] = "@block.outer",
                             ["ib"] = "@block.inner",
                         },
-                    }, 
+                    },
                 },
             }
         end,
